@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Daphne</title>
+    <title>Daphné Saioud - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
-            <div class="logo">Daphne</div>
+            <div class="logo">Daphné</div>
             <ul class="nav-links">
-                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#home">Accueil</a></li>
                 <li><a href="#about">À propos</a></li>
-                <li><a href="#projets">Projets</a></li>
-                <li><a href="#competences">Compétences</a></li>
+                <li><a href="#gallery">Portfolio</a></li>
+                <li><a href="#skills">Compétences</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="hamburger">
@@ -26,270 +26,203 @@
         </div>
     </nav>
 
-    <!-- Section Hero -->
-    <section id="accueil" class="hero">
+    <!-- Hero Section -->
+    <section id="home" class="hero">
         <div class="hero-content">
-            <h1>Développeuse Créative</h1>
-            <p>Je transforme vos idées en expériences numériques exceptionnelles</p>
-            <a href="#projets" class="cta-button">Découvrir mon travail</a>
+            <h1>Daphné Saioud</h1>
+            <p>Créative | Photographe | Communication Digital</p>
+            <a href="#gallery" class="cta-button">Découvrir mon travail</a>
         </div>
-        <div class="hero-shape"></div>
     </section>
 
-    <!-- Section À Propos -->
+    <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <div class="about-content">
-                <div class="about-text">
-                    <h2>À Propos de Moi</h2>
-                    <p>Bienvenue ! Je suis une développeuse passionnée par la création de solutions web innovantes et élégantes. Avec plusieurs années d'expérience, j'aime transformer des concepts complexes en interfaces simples et intuitives.</p>
-                    <p>Mon approche combine design moderne, développement technique solide et une attention particulière à l'expérience utilisateur.</p>
-                    <div class="about-stats">
-                        <div class="stat">
-                            <h3>50+</h3>
-                            <p>Projets complétés</p>
-                        </div>
-                        <div class="stat">
-                            <h3>30+</h3>
-                            <p>Clients satisfaits</p>
-                        </div>
-                        <div class="stat">
-                            <h3>5+</h3>
-                            <p>Années d'expérience</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="about-wrapper">
                 <div class="about-image">
-                    <div class="image-placeholder">📸</div>
+                    <img src="images/IMG_01.jpg" alt="Daphné Saioud">
+                </div>
+                <div class="about-content">
+                    <h2>À Propos</h2>
+                    <p>Bienvenue ! Je suis <strong>Daphné Saioud</strong>, étudiante en communication et marketing digital à l'EFAP.</p>
+                    <p>Passionnée par la mode et la photographie, je m'intéresse à la communication responsable et au pouvoir de l'image comme vecteur de sens.</p>
+                    <p>Mon approche combine <strong>sens esthétique</strong>, <strong>créativité visuelle</strong> et <strong>rigueur professionnelle</strong>.</p>
+                    
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <h3>EFAP Bordeaux</h3>
+                            <p>Communication & Marketing</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>Expérience</h3>
+                            <p>Événementiel • Photographie • Community Management</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>Localisation</h3>
+                            <p>Bordeaux, France</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Section Projets -->
-    <section id="projets" class="projets">
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
         <div class="container">
-            <h2>Mes Projets</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">🎨</div>
-                    <div class="project-content">
-                        <h3>Refonte Site E-commerce</h3>
-                        <p>Redesign complet d'une plateforme de vente en ligne avec amélioration UX/UI et optimisation des conversions.</p>
-                        <div class="project-tags">
-                            <span>Design</span>
-                            <span>UX/UI</span>
-                            <span>E-commerce</span>
-                        </div>
-                        <a href="#" class="project-link">Voir le projet →</a>
+            <h2>Mon Portfolio</h2>
+            <p class="gallery-subtitle">Créations visuelles et projets</p>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item large">
+                    <img src="images/IMG_02.JPG" alt="Portfolio 1">
+                    <div class="overlay">
+                        <h3>Projet 1</h3>
                     </div>
                 </div>
-
-                <div class="project-card">
-                    <div class="project-image">💻</div>
-                    <div class="project-content">
-                        <h3>Application Web Collaborative</h3>
-                        <p>Développement d'une application permettant aux équipes de collaborer en temps réel avec synchronisation cloud.</p>
-                        <div class="project-tags">
-                            <span>Frontend</span>
-                            <span>React</span>
-                            <span>Backend</span>
-                        </div>
-                        <a href="#" class="project-link">Voir le projet →</a>
+                
+                <div class="gallery-item">
+                    <img src="images/IMG_03.jpg" alt="Portfolio 2">
+                    <div class="overlay">
+                        <h3>Projet 2</h3>
                     </div>
                 </div>
-
-                <div class="project-card">
-                    <div class="project-image">📱</div>
-                    <div class="project-content">
-                        <h3>Application Mobile Fitness</h3>
-                        <p>Création d'une app mobile pour le suivi d'entraînement avec système de notifications et graphiques interactifs.</p>
-                        <div class="project-tags">
-                            <span>Mobile</span>
-                            <span>React Native</span>
-                            <span>UX</span>
-                        </div>
-                        <a href="#" class="project-link">Voir le projet →</a>
+                
+                <div class="gallery-item">
+                    <img src="images/IMG_05.JPG" alt="Portfolio 3">
+                    <div class="overlay">
+                        <h3>Projet 3</h3>
                     </div>
                 </div>
-
-                <div class="project-card">
-                    <div class="project-image">🚀</div>
-                    <div class="project-content">
-                        <h3>Plateforme SaaS</h3>
-                        <p>Développement d'une plateforme Software as a Service avec système de paiement et gestion des utilisateurs.</p>
-                        <div class="project-tags">
-                            <span>SaaS</span>
-                            <span>Payment</span>
-                            <span>Scalable</span>
-                        </div>
-                        <a href="#" class="project-link">Voir le projet →</a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">🎭</div>
-                    <div class="project-content">
-                        <h3>Identité Visuelle Complète</h3>
-                        <p>Création d'une identité de marque avec logo, guide de style, et assets pour une startup en croissance.</p>
-                        <div class="project-tags">
-                            <span>Branding</span>
-                            <span>Design</span>
-                            <span>Visual</span>
-                        </div>
-                        <a href="#" class="project-link">Voir le projet →</a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">🌐</div>
-                    <div class="project-content">
-                        <h3>Site Corporate Multilingue</h3>
-                        <p>Développement d'un site corporate avec support multilingue, CMS intégré et SEO optimisé.</p>
-                        <div class="project-tags">
-                            <span>Web</span>
-                            <span>SEO</span>
-                            <span>CMS</span>
-                        </div>
-                        <a href="#" class="project-link">Voir le projet →</a>
+                
+                <div class="gallery-item">
+                    <img src="images/IMG_06.jpg" alt="Portfolio 4">
+                    <div class="overlay">
+                        <h3>Projet 4</h3>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Section Compétences -->
-    <section id="competences" class="competences">
+    <!-- Education Section -->
+    <section id="education" class="education">
         <div class="container">
-            <h2>Mes Compétences</h2>
-            <div class="skills-container">
-                <div class="skills-column">
-                    <h3>Frontend</h3>
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span>HTML/CSS</span>
-                            <span>95%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 95%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span>JavaScript</span>
-                            <span>90%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 90%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span>React</span>
-                            <span>88%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 88%"></div>
-                        </div>
+            <h2>Formation</h2>
+            <div class="education-grid">
+                <div class="education-card">
+                    <h3>EFAP - Bordeaux</h3>
+                    <p>Communication & Marketing Digital</p>
+                    <span class="badge">En cours</span>
+                </div>
+                <div class="education-card">
+                    <h3>Hypokhâgne Molière - Paris</h3>
+                    <p>Préparation Littéraire</p>
+                    <span class="badge">Complété</span>
+                </div>
+                <div class="education-card">
+                    <h3>Licence de Droit - Bordeaux</h3>
+                    <p>Université Montaigne</p>
+                    <span class="badge">Complété</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>Compétences</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">🎨</div>
+                    <h3>Sens Esthétique</h3>
+                    <p>Créativité visuelle, photographie et merchandising</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">📸</div>
+                    <h3>Photographie</h3>
+                    <p>Capture et valorisation de l'image</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">💻</div>
+                    <h3>Communication Digital</h3>
+                    <p>Community Management, contenu digital</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🎯</div>
+                    <h3>Organisation</h3>
+                    <p>Gestion de projets, événementiel</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">👥</div>
+                    <h3>Relation Client</h3>
+                    <p>Esprit d'équipe, aisance relationnelle</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">✍️</div>
+                    <h3>Rigueur</h3>
+                    <p>Attention au détail, qualité</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2>Expérience Professionnelle</h2>
+            <div class="experience-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Louhouse Records</h3>
+                        <p><strong>Community Manager & Événementielle</strong></p>
+                        <p>Organisation de soirées, pop-up store, communication digital et relation client</p>
                     </div>
                 </div>
-
-                <div class="skills-column">
-                    <h3>Backend & Tools</h3>
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span>Node.js</span>
-                            <span>85%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 85%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span>Python</span>
-                            <span>80%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 80%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span>Git/GitHub</span>
-                            <span>92%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 92%"></div>
-                        </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Ville de Pessac</h3>
+                        <p><strong>Chargée Événementielle</strong></p>
+                        <p>Coordination logistique, accueil public, communication d'événement</p>
                     </div>
                 </div>
-
-                <div class="skills-column">
-                    <h3>Design & Soft Skills</h3>
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span>UI/UX Design</span>
-                            <span>90%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 90%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span>Communication</span>
-                            <span>88%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 88%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span>Gestion de Projet</span>
-                            <span>85%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 85%"></div>
-                        </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>O2 Radio</h3>
+                        <p><strong>Journaliste</strong></p>
+                        <p>Contenu audio, programmation musicale, interviews</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Section Contact -->
+    <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2>Travaillons Ensemble</h2>
-            <p class="contact-subtitle">Vous avez un projet en tête ? N'hésitez pas à me contacter</p>
+            <h2>Me Contacter</h2>
+            <p class="contact-subtitle">N'hésitez pas à me joindre pour discuter de vos projets</p>
             
-            <div class="contact-wrapper">
+            <div class="contact-content">
                 <div class="contact-info">
-                    <div class="info-item">
-                        <div class="info-icon">📧</div>
-                        <div class="info-content">
-                            <h3>Email</h3>
-                            <p><a href="mailto:contact@example.com">contact@example.com</a></p>
-                        </div>
+                    <div class="info-block">
+                        <h3>📧 Email</h3>
+                        <p><a href="mailto:daphne.saioud@efap.com">daphne.saioud@efap.com</a></p>
                     </div>
-                    <div class="info-item">
-                        <div class="info-icon">📱</div>
-                        <div class="info-content">
-                            <h3>Téléphone</h3>
-                            <p><a href="tel:+33612345678">+33 6 12 34 56 78</a></p>
-                        </div>
+                    <div class="info-block">
+                        <h3>📱 Téléphone</h3>
+                        <p><a href="tel:+33666784853">06 66 78 48 53</a></p>
                     </div>
-                    <div class="info-item">
-                        <div class="info-icon">📍</div>
-                        <div class="info-content">
-                            <h3>Localisation</h3>
-                            <p>Paris, France</p>
-                        </div>
+                    <div class="info-block">
+                        <h3>📍 Localisation</h3>
+                        <p>Bordeaux, France</p>
                     </div>
                 </div>
-
+                
                 <form class="contact-form">
                     <div class="form-group">
                         <input type="text" placeholder="Votre nom" required>
@@ -298,12 +231,9 @@
                         <input type="email" placeholder="Votre email" required>
                     </div>
                     <div class="form-group">
-                        <input type="text" placeholder="Sujet">
-                    </div>
-                    <div class="form-group">
                         <textarea placeholder="Votre message" rows="5" required></textarea>
                     </div>
-                    <button type="submit" class="submit-btn">Envoyer mon message</button>
+                    <button type="submit" class="submit-btn">Envoyer</button>
                 </form>
             </div>
         </div>
@@ -312,31 +242,11 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Portfolio</h3>
-                    <p>Développeuse créative spécialisée en web design et développement.</p>
-                </div>
-                <div class="footer-section">
-                    <h3>Liens Rapides</h3>
-                    <ul>
-                        <li><a href="#accueil">Accueil</a></li>
-                        <li><a href="#projets">Projets</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h3>Me Suivre</h3>
-                    <div class="social-links">
-                        <a href="#" title="LinkedIn">LinkedIn</a>
-                        <a href="#" title="GitHub">GitHub</a>
-                        <a href="#" title="Twitter">Twitter</a>
-                        <a href="#" title="Instagram">Instagram</a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Daphne Portfolio. Tous droits réservés.</p>
+            <p>&copy; 2026 Daphné Saioud. Tous droits réservés.</p>
+            <div class="social-links">
+                <a href="#" title="Instagram">Instagram</a>
+                <a href="#" title="LinkedIn">LinkedIn</a>
+                <a href="#" title="Email">Email</a>
             </div>
         </div>
     </footer>

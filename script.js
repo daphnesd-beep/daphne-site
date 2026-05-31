@@ -26,15 +26,15 @@ if (contactForm) {
         e.preventDefault();
         
         // Get form values
-        const name = contactForm.querySelector('input[type="text"]').value;
-        const email = contactForm.querySelector('input[type="email"]').value;
-        const subject = contactForm.querySelectorAll('input[type="text"]')[1]?.value || '';
-        const message = contactForm.querySelector('textarea').value;
+        const inputs = contactForm.querySelectorAll('input, textarea');
+        const name = inputs[0].value;
+        const email = inputs[1].value;
+        const message = inputs[2].value;
         
         // Simple validation
         if (name && email && message) {
             // Create mailto link
-            const mailtoLink = `mailto:contact@example.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Nom: ${name}\nEmail: ${email}\n\nMessage:\n${message}`)}`;
+            const mailtoLink = `mailto:daphne.saioud@efap.com?subject=Message de ${encodeURIComponent(name)}&body=${encodeURIComponent(`Nom: ${name}\nEmail: ${email}\n\nMessage:\n${message}`)}`;
             
             window.location.href = mailtoLink;
             
@@ -76,8 +76,21 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-// Observe project cards and skill items
-document.querySelectorAll('.project-card, .skill-item, .about-stats').forEach(el => {
+// Observe cards
+document.querySelectorAll('.education-card, .skill-card, .stat-item, .gallery-item').forEach(el => {
     el.style.opacity = '0';
     observer.observe(el);
+});
+
+// Navbar scroll effect
+let lastScroll = 0;
+const navbar = document.querySelector('.navbar');
+
+window.addEventListener('scroll', () => {
+    const scrollTop = window.scrollY;
+    if (scrollTop > 50) {
+        navbar.style.boxShadow = '0 5px 20px rgba(0, 0, 0, 0.1)';
+    } else {
+        navbar.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.05)';
+    }
 });
